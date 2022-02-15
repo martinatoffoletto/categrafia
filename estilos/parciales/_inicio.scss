@@ -1,0 +1,69 @@
+
+$naranja: #F2A649;
+
+/*MAIN INDEX*/
+
+/*Carusel*/
+.banner{  
+    height: 80vh;
+    overflow: hidden;
+    object-position: center;
+
+}
+
+.imagenC{
+    height: 80vh;
+    object-position: center;
+    margin: auto;
+    
+}
+
+
+.principal{
+    gap: 0;
+}
+
+/*Servicios mas populares*/
+
+.serviciosPopulares{
+    &_element{
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        font-weight: bolder;
+        img {
+            width: 20rem;
+            padding: 1rem;
+            margin: 2rem;
+        }
+    }
+    .naranja{
+        background-color: $naranja;
+        .btn-primary{
+            background-color: #F2F2F2;
+            a{
+                color: black;
+            }
+        }
+    }
+    .blanco .btn-primary{
+        background-color: $naranja;
+        a{
+            color: #F2F2F2;
+        }
+        
+    }
+    .btn-primary{
+        border: none;
+        a{
+            text-decoration: none;
+            font-family: Helvetica, sans-serif;
+            font-weight: 100;
+        }
+    }
+
+
+}
+
+
+

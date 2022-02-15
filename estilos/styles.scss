@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import "parciales/_inicio";
+@import "parciales/_servicios";
+@import "parciales/_nosotros";
+@import "parciales/_trabajos";
+@import "parciales/_contacto";
+$naranja: #F2A649;
+
+
+*{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.2rem;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-weight: bolder;   
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+
+/*---HEAVER/NAV---*/
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    nav .item-nav{
+        text-decoration: none;
+        color: white;
+        margin: 0.5rem;
+        text-align: center;
+        transition: color 0.1s;
+        &:hover{
+            color: #F2A649;
+        
+        }
+    }
+    .logos{
+        width: 300px;
+    }
+}
+
+
+.uls{
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+/*MAIN GENERALES PAGES*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+
+/*Banner de servicios, nosotros y trabajos*/
+@keyframes mover{
+    from{}
+    to{
+        transform: translate(0rem,1rem);
+    }
+}
+
+.banners{
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    padding: 0%;
+    margin: 0%;
+    &_titulo{
+        margin: 2rem;
+        background-color: #f2a649d2;
+        color: white;
+        align-self: center;
+        padding: 1rem 1rem 1rem 1rem;
+        font-weight: bolder;
+        text-align: center;
+        border-radius: 15px;
+    }
+    &_flecha{
+        width: 4rem;
+        justify-self: center;
+        animation: mover 1s infinite alternate;
+    }
+}
+
+$backs:(
+    ft2:"banner3.jpeg",
+    ft1:"banner.jpg",
+    ft3:"banner4.jpg",
+    ft4:"banner5.jpg",
+);
+
+@each $back,$nom in $backs {
+    .banners--#{$back} {
+        background-image: url(../../media/#{$nom}) ;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+
+
+/*FORMULARIOS*/
+
+form{
+    text-align: center;
+    margin: 1rem;
+    input{
+        width: 30rem;
+        height: 2rem;
+        &:hover{
+            transform: scale(1.05);
+            transition: 1s;  
+        }
+    }   
+    legend{
+        padding: 1rem;
+    }
+    div{
+        padding: 1rem;
+    }
+    .acepte input{
+        transform: none;
+    }
+}
+
+ 
+
+
+/*FOOTER*/
+
+
+.footers {
+    padding: 20px;
+    color: #F2F2F2;
+    background-color: $naranja;
+    margin-top: 1rem;
+    &_element{
+        ul li {
+            list-style: none;
+            a {
+                color: white;
+                text-decoration: none;
+                letter-spacing: 0.1rem;
+                margin: 2rem;
+                
+        
+            }
+
+        }
+        &_redes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_iconos{
+                margin: 0.5rem;
+                background-color: #F2F2F2;
+                padding: 1rem;
+                border-radius: 50%;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 1s; 
+
+                }
+                img{
+                    width: 25px;
+                }
+            }
+        
+        }
+        
+    }
+
+    &_element p {
+        flex-grow: 1;
+        text-align: center;
+        margin: 0%;
+    
+    }
+}
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 1024px){
+
+    .logito{
+        display: none;
+    }
+
+    
+}
+@media only screen and (max-width: 768px){
+    .imagenes{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(12,15rem);
+        column-gap: 1rem;
+        row-gap: 1rem
+
+    }
+
+    header .logos{
+        width: 280px;
+    }
+
+    .footers_element_redes_iconos img{
+        width: 23px;
+    }
+
+    .footers_element_redes_iconos{
+        padding: 0.8rem;
+    }
+}   
+
+
+@media only screen and (max-width: 480px){ 
+    header .logos{
+        width: 180px;
+    }
+
+}  
+
+@media only screen and (max-width: 320px){
+    .imagenes{
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(24,10rem);
+        column-gap: 1rem;
+        row-gap: 1rem
+
+    }
+    header .logos{
+        width: 130px;
+    }
+
+   
+
+    .footers_element_redes_iconos img{
+        width: 15px;
+    }
+    .footers_element_redes_iconos{
+        padding: 0.3rem;
+    }
+
+    
+
+}  

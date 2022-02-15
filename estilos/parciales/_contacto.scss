@@ -1,0 +1,14 @@
+
+$naranja: #F2A649;
+/*MAIN CONTACTO*/
+.contacto{
+    align-items: center;
+    &_element {
+        width: 100%;
+        &--mapa{
+            height: 30rem;
+        }
+    }
+    
+}
+
