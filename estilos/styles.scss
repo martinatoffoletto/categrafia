@@ -12,8 +12,7 @@ $naranja: #F2A649;
     letter-spacing: 0.2rem;
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
-    font-weight: bolder;   
+    box-sizing: border-box; 
 }
 
 body{
@@ -228,6 +227,8 @@ form{
     .footers_element_redes_iconos{
         padding: 0.8rem;
     }
+
+ 
 }   
 
 
@@ -235,7 +236,7 @@ form{
     header .logos{
         width: 180px;
     }
-
+   
 }  
 
 @media only screen and (max-width: 320px){
@@ -250,7 +251,6 @@ form{
         width: 130px;
     }
 
-   
 
     .footers_element_redes_iconos img{
         width: 15px;

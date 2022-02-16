@@ -29,12 +29,11 @@ $naranja: #F2A649;
     &_element{
         justify-content: center;
         align-items: center;
-        padding: 5rem;
-        font-weight: bolder;
-        img {
-            width: 20rem;
+        padding: 3rem;
+        img{
             padding: 1rem;
             margin: 2rem;
+            max-width: 20rem;
         }
     }
     .naranja{
@@ -57,8 +56,6 @@ $naranja: #F2A649;
         border: none;
         a{
             text-decoration: none;
-            font-family: Helvetica, sans-serif;
-            font-weight: 100;
         }
     }
 
