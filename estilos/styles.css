@@ -97,8 +97,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 12px 19px 0px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 12px 19px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 3px 20px #ccc8c8;
+          box-shadow: 0px 3px 20px #ccc8c8;
 }
 
 .populares .card-imgs {
@@ -116,8 +116,8 @@
   background-image: -webkit-gradient(linear, left top, right top, from(#F2A649), to(#F25C5C));
   background-image: linear-gradient(to right, #F2A649, #F25C5C);
   border: none;
-  -webkit-box-shadow: 0px 1px 10px #666666;
-          box-shadow: 0px 1px 10px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+          box-shadow: 0px 1px 3px #666666;
 }
 
 .populares .card-body .btn-primary:hover {
@@ -296,10 +296,10 @@ main {
   width: 4rem;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-animation: mover 1s infinite alternate;
-          animation: mover 1s infinite alternate;
-  -webkit-filter: drop-shadow(0px 0px 4px #F2A649);
-          filter: drop-shadow(0px 0px 4px #F2A649);
+  -webkit-animation: mover 1.3s infinite alternate;
+          animation: mover 1.3s infinite alternate;
+  -webkit-filter: drop-shadow(0px 5px 4px #868484);
+          filter: drop-shadow(0px 5px 4px #868484);
 }
 
 .banners--ft2 {
@@ -332,13 +332,18 @@ main {
 
 /*FORMULARIOS*/
 form {
-  text-align: center;
   margin: 1rem;
+  background-color: #ebebeb;
+  padding: 2rem;
+  border-radius: 20px;
 }
 
 form input {
   width: 30rem;
   height: 2rem;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
 }
 
 form input:hover {
@@ -367,8 +372,6 @@ form .acepte input {
   color: #F2F2F2;
   background-color: #F2A649;
   margin-top: 1rem;
-  -webkit-box-shadow: 0px 1px 10px #666666;
-          box-shadow: 0px 1px 10px #666666;
 }
 
 .footers_element ul li {
