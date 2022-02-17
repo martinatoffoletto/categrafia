@@ -2,17 +2,20 @@
 /*MAIN INDEX*/
 /*Carusel*/
 .banner {
-  max-height: 80vh;
+  height: 80vh;
   overflow: hidden;
 }
 
+.carousel-item {
+  position: unset;
+  height: 80vh;
+}
+
 .imagenC {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  line-height: 1;
-  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .principal {
@@ -20,6 +23,10 @@
 }
 
 /*Servicios mas populares*/
+.serviciosPopulares {
+  margin-bottom: 2rem;
+}
+
 .serviciosPopulares_element {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -27,13 +34,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem;
+  padding: 4rem;
+  margin-bottom: 0.5rem;
 }
 
 .serviciosPopulares_element img {
-  padding: 2rem;
-  margin: 0.5rem;
-  max-width: 20rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  max-width: 15rem;
 }
 
 .serviciosPopulares .naranja {
@@ -62,6 +70,10 @@
 
 .serviciosPopulares .btn-primary a {
   text-decoration: none;
+}
+
+.serviciosPopulares .btn-primary:hover {
+  background-color: #F25C5C;
 }
 
 /*SERVICIOS*/
@@ -106,6 +118,10 @@
   border: none;
   -webkit-box-shadow: 0px 1px 10px #666666;
           box-shadow: 0px 1px 10px #666666;
+}
+
+.populares .card-body .btn-primary:hover {
+  background-image: none;
 }
 
 .populares .card-title {
@@ -234,16 +250,16 @@ main {
   from {
   }
   to {
-    -webkit-transform: translate(0rem, 1rem);
-            transform: translate(0rem, 1rem);
+    -webkit-transform: translate(0rem, 1.4rem);
+            transform: translate(0rem, 1.4rem);
   }
 }
 @keyframes mover {
   from {
   }
   to {
-    -webkit-transform: translate(0rem, 1rem);
-            transform: translate(0rem, 1rem);
+    -webkit-transform: translate(0rem, 1.4rem);
+            transform: translate(0rem, 1.4rem);
   }
 }
 
@@ -351,6 +367,8 @@ form .acepte input {
   color: #F2F2F2;
   background-color: #F2A649;
   margin-top: 1rem;
+  -webkit-box-shadow: 0px 1px 10px #666666;
+          box-shadow: 0px 1px 10px #666666;
 }
 
 .footers_element ul li {
@@ -362,6 +380,10 @@ form .acepte input {
   text-decoration: none;
   letter-spacing: 0.1rem;
   margin: 2rem;
+}
+
+.footers_element ul li a:hover {
+  text-decoration: underline;
 }
 
 .footers_element_redes {
@@ -381,16 +403,19 @@ form .acepte input {
   background-color: #F2F2F2;
   padding: 1rem;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 10px #666666;
+          box-shadow: 0px 1px 10px #666666;
 }
 
 .footers_element_redes_iconos:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background-color: white;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.footers_element_redes_iconos img {
+.footers_element_redes img {
   width: 25px;
 }
 
@@ -428,11 +453,17 @@ form .acepte input {
   .footers_element_redes_iconos {
     padding: 0.8rem;
   }
+  .serviciosPopulares_element {
+    padding: 2rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   header .logos {
     width: 180px;
+  }
+  .imagenC {
+    width: 600px;
   }
 }
 
@@ -449,11 +480,8 @@ form .acepte input {
   header .logos {
     width: 130px;
   }
-  .footers_element_redes_iconos img {
-    width: 15px;
-  }
   .footers_element_redes_iconos {
-    padding: 0.3rem;
+    padding: 0.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -69,7 +69,7 @@ main{
 @keyframes mover{
     from{}
     to{
-        transform: translate(0rem,1rem);
+        transform: translate(0rem,1.4rem);
     }
 }
 
@@ -152,6 +152,7 @@ form{
     color: #F2F2F2;
     background-color: $naranja;
     margin-top: 1rem;
+    box-shadow: 0px 1px 10px #666666;
     &_element{
         ul li {
             list-style: none;
@@ -160,6 +161,10 @@ form{
                 text-decoration: none;
                 letter-spacing: 0.1rem;
                 margin: 2rem;
+                &:hover{
+                    text-decoration: underline;
+
+                }
                 
         
             }
@@ -174,26 +179,27 @@ form{
                 background-color: #F2F2F2;
                 padding: 1rem;
                 border-radius: 50%;
+                box-shadow: 0px 1px 10px #666666;
                 &:hover{
+                    background-color: white ;
+                    transition: 1s;
                     transform: scale(1.1);
-                    transition: 1s; 
+                }
 
-                }
-                img{
-                    width: 25px;
-                }
             }
+            img{
+                width: 25px;
+            }
+        }
+        p {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0%;
         
         }
         
     }
 
-    &_element p {
-        flex-grow: 1;
-        text-align: center;
-        margin: 0%;
-    
-    }
 }
 
 
@@ -216,6 +222,7 @@ form{
 
     }
 
+
     header .logos{
         width: 280px;
     }
@@ -228,6 +235,12 @@ form{
         padding: 0.8rem;
     }
 
+    .serviciosPopulares{
+        &_element{
+            padding: 2rem;
+        }
+    }   
+
  
 }   
 
@@ -235,6 +248,9 @@ form{
 @media only screen and (max-width: 480px){ 
     header .logos{
         width: 180px;
+    }
+    .imagenC{
+        width: 600px;
     }
    
 }  
@@ -251,14 +267,8 @@ form{
         width: 130px;
     }
 
-
-    .footers_element_redes_iconos img{
-        width: 15px;
-    }
     .footers_element_redes_iconos{
-        padding: 0.3rem;
+        padding: 0.8rem;
     }
-
-    
 
 }  

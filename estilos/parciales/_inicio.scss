@@ -5,19 +5,21 @@ $naranja: #F2A649;
 
 /*Carusel*/
 .banner{  
-    max-height: 80vh;
+    height: 80vh;
     overflow: hidden;
+
 }
 
 
+.carousel-item {
+    position:unset; 
+    height: 80vh; 
+}
+
 .imagenC{
-    display: block;
-    height: auto;
-    max-width: 100%;
-    line-height: 1;
-    margin:auto;
+    object-fit: cover; 
     width: 100%;
-    
+    height: 100%;
 }
 
 
@@ -28,14 +30,16 @@ $naranja: #F2A649;
 /*Servicios mas populares*/
 
 .serviciosPopulares{
+    margin-bottom: 2rem;
     &_element{
         justify-content: center;
         align-items: center;
-        padding: 3rem;
+        padding: 4rem;
+        margin-bottom: 0.5rem;
         img{
-            padding: 2rem;
-            margin: 0.5rem;
-            max-width: 20rem;
+            padding: 0.5rem;
+            margin: 1rem;
+            max-width: 15rem;
         }
     }
     .naranja{
@@ -58,6 +62,10 @@ $naranja: #F2A649;
         border: none;
         a{
             text-decoration: none;
+        }
+        &:hover{
+            background-color: #F25C5C;
+
         }
     }
 
