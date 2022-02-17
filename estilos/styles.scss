@@ -76,7 +76,7 @@ main{
 .banners{
     height: 80vh;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     justify-content: center;
     align-content: center;
     align-self: center;
@@ -84,18 +84,18 @@ main{
     margin: 0%;
     &_titulo{
         margin: 2rem;
-        background-color: #f2a649d2;
+        background-color: rgba(0, 0, 0, 0.63);
         color: white;
         align-self: center;
-        padding: 1rem 1rem 1rem 1rem;
-        font-weight: bolder;
+        padding: 1.3rem;
         text-align: center;
-        border-radius: 15px;
+        border-radius: 5px 30px 5px 30px;
     }
     &_flecha{
         width: 4rem;
         justify-self: center;
         animation: mover 1s infinite alternate;
+        filter: drop-shadow(0px 0px 4px $naranja);
     }
 }
 

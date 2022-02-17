@@ -12,6 +12,7 @@ $naranja: #F2A649;
         margin: 2rem;
         justify-content: center;
         border-radius: 10px;
+        box-shadow: 5px 12px 19px 0px rgba(0,0,0,0.7);
         &-imgs{
             width:auto;
             max-height: 12rem;
@@ -20,11 +21,11 @@ $naranja: #F2A649;
         &-body {
             text-align: center;
             .btn-primary{
+                background-color: #F2A649;
                 background-image: linear-gradient(to right,$naranja,#F25C5C);
                 border:none;
+                box-shadow: 0px 1px 10px #666666;
             }
-            
-            
         }
         &-title{
             text-transform: uppercase;
