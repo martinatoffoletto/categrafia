@@ -108,7 +108,7 @@ $backs:(
 
 @each $back,$nom in $backs {
     .banners--#{$back} {
-        background-image: url(../../media/#{$nom}) ;
+        background-image: url(../media/#{$nom}) ;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
