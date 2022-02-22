@@ -112,7 +112,6 @@ $backs:(
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-        background-repeat: no-repeat;
 
     }
 }
@@ -248,13 +247,6 @@ form{
             padding: 2rem;
         }
     }   
-
-    @each $back,$nom in $backs {
-        .banners--#{$back} {
-            background-image: url(../media/#{$nom}) ;
-            background-size: unset;
-        }
-    }
  
 }   
 

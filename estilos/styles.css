@@ -331,7 +331,6 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .banners--ft1 {
@@ -339,7 +338,6 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .banners--ft3 {
@@ -347,7 +345,6 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .banners--ft4 {
@@ -355,7 +352,6 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 /*FORMULARIOS*/
@@ -487,22 +483,6 @@ form .acepte input {
   }
   .serviciosPopulares_element {
     padding: 2rem;
-  }
-  .banners--ft2 {
-    background-image: url(../media/banner3.jpeg);
-    background-size: unset;
-  }
-  .banners--ft1 {
-    background-image: url(../media/banner.jpg);
-    background-size: unset;
-  }
-  .banners--ft3 {
-    background-image: url(../media/banner4.jpg);
-    background-size: unset;
-  }
-  .banners--ft4 {
-    background-image: url(../media/banner5.jpg);
-    background-size: unset;
   }
 }
 
