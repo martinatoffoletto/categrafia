@@ -110,8 +110,9 @@ $backs:(
     .banners--#{$back} {
         background-image: url(../media/#{$nom}) ;
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         background-attachment: fixed;
+
     }
 }
 
@@ -120,7 +121,6 @@ $backs:(
 /*FORMULARIOS*/
 
 form{
-   
     margin: 1rem;
     background-color: #ebebeb;
     padding: 2rem;
@@ -129,6 +129,7 @@ form{
         width: 30rem;
         height: 2rem;
         background-color: white;
+        color: black;
         &:hover{
             transform: scale(1.05);
             transition: 1s;  
@@ -246,7 +247,6 @@ form{
             padding: 2rem;
         }
     }   
-
  
 }   
 

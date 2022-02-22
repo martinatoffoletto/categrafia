@@ -4,7 +4,10 @@ $naranja: #F2A649;
 .contacto{
     align-items: center;
     &_element {
-        width: 90%;
+        width: 100%;
+        &_titulo{
+            margin: 2rem;
+        }
         &--mapa{
             height: 30rem;
             margin: 1rem;
