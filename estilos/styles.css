@@ -152,11 +152,31 @@
   row-gap: 1rem;
 }
 
-.imagenes_singular {
+.imagenes_contenedor {
+  display: inline-block;
+  position: relative;
+}
+
+.imagenes_contenedor_texto {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  padding: 1rem;
+  margin: 0;
+  color: black;
+}
+
+.imagenes_contenedor_singular {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.imagenes_contenedor_singular:hover {
+  opacity: 0.6;
 }
 
 /*MAIN CONTACTO*/
@@ -466,22 +486,22 @@ form .acepte input {
   }
   .banners--ft2 {
     background-image: url(../media/banner3.jpeg);
-    background-size: auto 100%;
+    background-size: auto 80vh;
     overflow: hidden;
   }
   .banners--ft1 {
     background-image: url(../media/banner.jpg);
-    background-size: auto 100%;
+    background-size: auto 80vh;
     overflow: hidden;
   }
   .banners--ft3 {
     background-image: url(../media/banner4.jpg);
-    background-size: auto 100%;
+    background-size: auto 80vh;
     overflow: hidden;
   }
   .banners--ft4 {
     background-image: url(../media/banner5.jpg);
-    background-size: auto 100%;
+    background-size: auto 80vh;
     overflow: hidden;
   }
 }
