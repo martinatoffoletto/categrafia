@@ -252,8 +252,7 @@ form{
     @each $back,$nom in $backs {
         .banners--#{$back} {
             background-image: url(../media/#{$nom}) ;
-            background-size: auto 100%;
-            overflow: hidden;
+            background-size: auto auto;
         }
     }
  

@@ -490,23 +490,19 @@ form .acepte input {
   }
   .banners--ft2 {
     background-image: url(../media/banner3.jpeg);
-    background-size: auto 100%;
-    overflow: hidden;
+    background-size: auto auto;
   }
   .banners--ft1 {
     background-image: url(../media/banner.jpg);
-    background-size: auto 100%;
-    overflow: hidden;
+    background-size: auto auto;
   }
   .banners--ft3 {
     background-image: url(../media/banner4.jpg);
-    background-size: auto 100%;
-    overflow: hidden;
+    background-size: auto auto;
   }
   .banners--ft4 {
     background-image: url(../media/banner5.jpg);
-    background-size: auto 100%;
-    overflow: hidden;
+    background-size: auto auto;
   }
 }
 
