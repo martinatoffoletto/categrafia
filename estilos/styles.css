@@ -331,6 +331,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .banners--ft1 {
@@ -338,6 +339,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .banners--ft3 {
@@ -345,6 +347,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .banners--ft4 {
@@ -352,6 +355,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /*FORMULARIOS*/
