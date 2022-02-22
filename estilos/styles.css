@@ -464,6 +464,26 @@ form .acepte input {
   .serviciosPopulares_element {
     padding: 2rem;
   }
+  .banners--ft2 {
+    background-image: url(../media/banner3.jpeg);
+    background-size: auto 100%;
+    overflow: hidden;
+  }
+  .banners--ft1 {
+    background-image: url(../media/banner.jpg);
+    background-size: auto 100%;
+    overflow: hidden;
+  }
+  .banners--ft3 {
+    background-image: url(../media/banner4.jpg);
+    background-size: auto 100%;
+    overflow: hidden;
+  }
+  .banners--ft4 {
+    background-image: url(../media/banner5.jpg);
+    background-size: auto 100%;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 480px) {
