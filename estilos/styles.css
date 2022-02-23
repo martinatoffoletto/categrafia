@@ -493,6 +493,18 @@ form .acepte input {
   .imagenC {
     width: 600px;
   }
+  .banners--ft2 {
+    background-attachment: unset;
+  }
+  .banners--ft1 {
+    background-attachment: unset;
+  }
+  .banners--ft3 {
+    background-attachment: unset;
+  }
+  .banners--ft4 {
+    background-attachment: unset;
+  }
 }
 
 @media only screen and (max-width: 320px) {

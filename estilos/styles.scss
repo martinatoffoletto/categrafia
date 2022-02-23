@@ -258,6 +258,12 @@ form{
     .imagenC{
         width: 600px;
     }
+    @each $back,$nom in $backs {
+        .banners--#{$back} {
+            background-attachment: unset;
+    
+        }
+    }
 
    
 }  
