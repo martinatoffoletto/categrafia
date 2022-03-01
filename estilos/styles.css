@@ -493,18 +493,6 @@ form .acepte input {
   .imagenC {
     width: 600px;
   }
-  .banners--ft2 {
-    background-attachment: unset;
-  }
-  .banners--ft1 {
-    background-attachment: unset;
-  }
-  .banners--ft3 {
-    background-attachment: unset;
-  }
-  .banners--ft4 {
-    background-attachment: unset;
-  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -522,6 +510,16 @@ form .acepte input {
   }
   .footers_element_redes_iconos {
     padding: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  .footers_element_redes_iconos {
+    padding: 0.5rem;
+    margin: 0.2rem;
+  }
+  form legend {
+    overflow: scroll;
   }
 }
 /*# sourceMappingURL=styles.css.map */

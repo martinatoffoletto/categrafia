@@ -258,12 +258,7 @@ form{
     .imagenC{
         width: 600px;
     }
-    @each $back,$nom in $backs {
-        .banners--#{$back} {
-            background-attachment: unset;
-    
-        }
-    }
+
 
    
 }  
@@ -286,3 +281,16 @@ form{
 
 
 }  
+
+@media only screen and (max-width: 240px){
+    .footers_element_redes_iconos{
+        padding: 0.5rem;
+        margin: 0.2rem ;
+    }
+    
+    form legend{
+        overflow:scroll;
+    }
+
+
+}
