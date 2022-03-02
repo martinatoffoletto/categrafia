@@ -246,6 +246,10 @@ header .logos {
   width: 300px;
 }
 
+header .dropdown-item {
+  white-space: normal;
+}
+
 .uls {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
